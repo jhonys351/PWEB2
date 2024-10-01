@@ -1,0 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+#content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+#myLink {
+    color: blue;
+    text-decoration: none;
+}
+#myLink:hover {
+    text-decoration: underline;
+}
+.dynamic-div {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+}
