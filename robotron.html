@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <title>Robotron 2000</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <main>
+        <section class="robotron">
+        
+            <img class="robo" src="img/robotron.png" alt="Robotron">
+            <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
+            <div class="buttons">
+                <button id="trocarobo" class="previus" onclick="previusrobotron()"><span
+                        class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span></button>
+                <button id="trocarobo" class="next" onclick="nextrobotron()"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span></button>
+            </div>
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Força</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero forca">768</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Poder</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero poder">630</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Energia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero energia">289</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocidade</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero velocidade">597</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Braços</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste menos" onclick="remove('.bracos')">-</buttom>
+                            <input type="text" class="controle-contador bracos" value="0" disabled min="0">
+                            <buttom class="controle-ajuste mais" onclick="add('.bracos')">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Blindagem</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste menos" onclick="remove('.blindagem')">-</buttom>
+                            <input type="text" class="controle-contador blindagem" value="0" disabled min="0">
+                            <buttom class="controle-ajuste mais" onclick="add('.blindagem')">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Núcleos</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste menos" onclick="remove('.nucleos')">-</buttom>
+                            <input type="text" class="controle-contador nucleos" value="0" disabled min="0">
+                            <buttom class="controle-ajuste mais" onclick="add('.nucleos')">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Pernas</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste menos" onclick="remove('.pernas')">-</buttom>
+                            <input type="text" class="controle-contador pernas" value="0" disabled min="0">
+                            <buttom class="controle-ajuste mais" onclick="add('.pernas')">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Foguetes</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste menos" onclick="remove('.foguetes')">-</buttom>
+                            <input type="text" class="controle-contador foguetes" value="0" disabled min="0">
+                            <buttom class="controle-ajuste mais" onclick="add('.foguetes')">+</buttom>
+                        </div>
+                    </div>
+                </div>
+           
+                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
